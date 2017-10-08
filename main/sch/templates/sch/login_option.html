@@ -1,0 +1,25 @@
+<html>
+	<title> Login</title>
+	<body>
+	 
+
+	 <form class="form-horizontal" name="LoginForm" action="/login1/" method="post">
+	  {% csrf_token %}
+        
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Login as Teacher</button>
+            </div>
+        </div>
+        </form>	
+        <form class="form-horizontal" name="LoginForm" action="/login2/" method="post">
+      {% csrf_token %}
+        
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Login as Student</button>
+            </div>
+        </div>
+        </form> 
+	</body>
+</html>
