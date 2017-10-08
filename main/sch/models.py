@@ -9,6 +9,8 @@ class Schedule(models.Model):
 		return self.slots
 
 class Person(models.Model):
+	Tid =models.CharField(max_length=6, default="", editable=False)
+	password =models.CharField(max_length=10, default="")
 	name = models.CharField(max_length=40)
 	subject = models.CharField(max_length=6)
 	TT = models.OneToOneField(Schedule)
